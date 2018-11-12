@@ -1,0 +1,90 @@
+{
+	// uni-app 通过 pages 节点配置应用由哪些页面组成。每个页面需要定义在这里
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor":"#1b1e27",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},
+		{
+			"path":"pages/vuexApplication/vuexApplication",
+			"style":{
+				"navigationBarTitleText":"uniApp 接口(调用原生API)"
+			}	
+		},
+		{
+			"path":"pages/uniInterface/uniInterface",
+			"style":{
+				"navigationBarTitleText":"uniApp 接口(调用原生API)"
+			}	
+		},
+		{
+			"path":"pages/network/network",
+			"style":{
+				"navigationBarTitleText":"网络请求"
+			}	
+		},
+		{
+			"path":"pages/vueComponent/vueComponent",
+			"style":{
+				"navigationBarTitleText":"Vue 组件应用"
+			}
+		},
+		{
+			"path":"pages/uniComponent/uniComponent",
+			"style":{
+				"navigationBarTitleText":"uniApp 基础组件应用"
+			}
+		},
+		{
+			"path":"pages/application/application",
+			"style":{
+				"navigationBarTitleText":"uni-app应用"
+			}
+		},
+		{
+			"path":"pages/setting/setting",
+			"style":{
+				"navigationBarTitleText":"设置"
+			}
+		}
+	],
+	// 默认设置应用的状态栏、导航条、标题、窗口背景色等。
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "默认标题",
+		"navigationBarBackgroundColor": "#6495ED"
+	},
+	// 底部导航栏
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#1296db",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/icon/home0.png",
+				"selectedIconPath": "static/icon/home.png",
+				"text": "主页"
+			}, 
+			{
+				"pagePath": "pages/application/application",
+				"iconPath": "static/icon/my0.png",
+				"selectedIconPath": "static/icon/my.png",
+				"text": "应用"
+			},
+			{
+				"pagePath": "pages/setting/setting",
+				"iconPath": "static/icon/setting0.png",
+				"selectedIconPath": "static/icon/setting.png",
+				"text": "设置"
+			}
+		]
+    }
+}
